@@ -1,7 +1,7 @@
 version: '3.1'
 services:
    mysql:
-     image: mariadb:10.4.3
+     image: mariadb:11.4.5
      volumes:
        - db_data:/var/lib/mysql
      restart: always
@@ -15,7 +15,7 @@ services:
      ports:
        - "3306:3306"
    redis:
-     image: redis:5.0.3-alpine
+     image: redis:7.4.2-alpine
      restart: always
      ports:
        - "6379:6379"
